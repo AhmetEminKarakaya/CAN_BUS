@@ -1,0 +1,20 @@
+09:03:20 **** Incremental Build of configuration Debug for project Can_bus_get_adc_data_and_show_with_lcd ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Can_bus_get_adc_data_and_show_with_lcd.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Can_bus_workspace\can_bus_calisma\Can_bus_get_adc_data_and_show_with_lcd\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Can_bus_get_adc_data_and_show_with_lcd.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Can_bus_get_adc_data_and_show_with_lcd.elf
+ 
+arm-none-eabi-size   Can_bus_get_adc_data_and_show_with_lcd.elf 
+arm-none-eabi-objdump -h -S  Can_bus_get_adc_data_and_show_with_lcd.elf  > "Can_bus_get_adc_data_and_show_with_lcd.list"
+arm-none-eabi-objcopy  -O binary  Can_bus_get_adc_data_and_show_with_lcd.elf  "Can_bus_get_adc_data_and_show_with_lcd.bin"
+   text	   data	    bss	    dec	    hex	filename
+  12184	     20	   1788	  13992	   36a8	Can_bus_get_adc_data_and_show_with_lcd.elf
+Finished building: default.size.stdout
+ 
+Finished building: Can_bus_get_adc_data_and_show_with_lcd.bin
+ 
+Finished building: Can_bus_get_adc_data_and_show_with_lcd.list
+ 
+
+09:03:22 Build Finished. 0 errors, 0 warnings. (took 1s.588ms)
+

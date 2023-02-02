@@ -1,0 +1,10 @@
+20:01:49 **** Incremental Build of configuration Debug for project can_bus_extended_filtreli_calisma_board1 ****
+make -j8 all 
+arm-none-eabi-size   can_bus_extended_filtreli_calisma_board1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9904	     20	   1708	  11632	   2d70	can_bus_extended_filtreli_calisma_board1.elf
+Finished building: default.size.stdout
+ 
+
+20:01:49 Build Finished. 0 errors, 0 warnings. (took 226ms)
+

@@ -1,0 +1,10 @@
+15:40:08 **** Incremental Build of configuration Debug for project can_bus_belirli_aralikli_filtreli_calisma_board1 ****
+make -j8 all 
+arm-none-eabi-size   can_bus_belirli_aralikli_filtreli_calisma_board1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9896	     20	   1708	  11624	   2d68	can_bus_belirli_aralikli_filtreli_calisma_board1.elf
+Finished building: default.size.stdout
+ 
+
+15:40:08 Build Finished. 0 errors, 0 warnings. (took 230ms)
+
